@@ -43,3 +43,34 @@ border-radius: 0;
 .headerLogo img{
   width: 200px;
 }
+
+/* Learn More Section */
+
+.learnMoreText{
+  padding: 0 20px;
+}
+
+.learnMoreText p{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  letter-spacing: 3px;
+  line-height: 36px;
+}
+
+.learnMoreButton {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.learnMoreButton button{
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #35B29D;
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 14px;
+  text-align: center;
+}
