@@ -1,8 +1,22 @@
+<div class="header">
+  <div class="nav">
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Campers</li>
+      <li>Contact Us</li>
+    </ul>
+  </div>
+  <div class="headerLogo">
+    <a href="/"><img src="../../assets/images/logo.png" alt="camp silah logo"></a>
+  </div>
+</div>
+
 <div class="main">
   <div class="learnMoreText">
     <p>The word Silah in Arabic means connection, which is the theme of this year's camp. We are hoping that by the end of the camp, each participant will have a better connection with Allah SWT, themselves, and nature. This camp will be for both boys and girls aged 8-18. Click below to learn more!</p>
   </div>
   <div class="learnMoreButton">
-    <button type="button" name="button">LEARN MORE</button>
+    {{#link-to 'about'}}<button type="button" name="button">LEARN MORE</button>{{/link-to}}
   </div>
 </div>
