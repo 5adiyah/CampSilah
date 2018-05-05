@@ -126,32 +126,39 @@ border-radius: 0;
 .aboutTabs {
   margin-top: 20px;
   width: 100%;
-  display: grid;
-  grid-template-rows: 100px 100px 100px 100px 100px;
 }
 
-.aboutTab, .scheduleTab, .counselorsTab, .faqTab, .donateTab{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.tabItem label{
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.tabItem{
+  align-items: center;
+  text-align: center;
+  background-color: #304771;
+  color: #fff;
+  padding: 50px;
+}
+
+.whiteTab{
+  background-color: #fff;
   color: #292929;
 }
 
-.aboutTab, .counselorsTab, .donateTab{
-  background-color: #304771;
-  color: #fff;
+.tabItem .tabContent{
+  height: 0;
+  overflow: hidden;
+  transition: height 2s ease;
 }
 
+.tabItem input[type=checkbox]{
+  display: none;
+}
 
-
-/* <div class="aboutTabs">
-  <div class="aboutTab"></div>
-  <div class="scheduleTab"></div>
-  <div class="counselorsTab"></div>
-  <div class="faqTab"></div>
-  <div class="donateTab"></div>
-</div> */
+.tabItem input[type=checkbox]:checked + .tabContent {
+  height: auto;
+  transition: all 2ms ease;
+}
