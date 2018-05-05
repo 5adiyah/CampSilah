@@ -140,7 +140,7 @@ border-radius: 0;
   text-align: center;
   background-color: #304771;
   color: #fff;
-  padding: 50px;
+  padding: 30px 0 20px 0;
 }
 
 .whiteTab{
@@ -150,8 +150,8 @@ border-radius: 0;
 
 .tabItem .tabContent{
   height: 0;
-  overflow: hidden;
-  transition: height 2s ease;
+  color: transparent;
+  transition: height 2s ease, color 0ms linear;
 }
 
 .tabItem input[type=checkbox]{
@@ -160,5 +160,37 @@ border-radius: 0;
 
 .tabItem input[type=checkbox]:checked + .tabContent {
   height: auto;
-  transition: all 2ms ease;
+  background-color: #fff;
+  color: #292929;
+  margin-top: 30px;
+  padding: 10px 0 30px 0;
+  transition: all 2ms ease, color 3ms linear;
 }
+
+/*
+
+.aboutTab, .scheduleTab, .counselorsTab, .faqTab, .donateTab{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.aboutTab, .counselorsTab, .donateTab{
+  background-color: #304771;
+  color: #fff;
+} */
+
+
+
+/* <div class="aboutTabs">
+  <div class="aboutTab"></div>
+  <div class="scheduleTab"></div>
+  <div class="counselorsTab"></div>
+  <div class="faqTab"></div>
+  <div class="donateTab"></div>
+</div> */
